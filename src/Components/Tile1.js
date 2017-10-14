@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Tile1Container = styled.div`
   box-sizing: border-box;
   width: 98%;
+  max-height: 165px;
   height: 30vw;
   position: relative;
   overflow: hidden;

@@ -9,7 +9,7 @@ import Tile5 from "./Components/Tile5";
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style={{ margin: "auto", maxWidth: "550px" }}>
         <Tile1 />
         <Tile2 />
         <Tile3 />
