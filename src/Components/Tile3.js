@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Tile3Container = styled.div`
-  width: 48%;
+  width: 43%;
   margin: 1%;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
   background: #83bddd;
   border: 5px solid black;
+  float: left;
 
   @keyframes tile2-figures {
     0% {
