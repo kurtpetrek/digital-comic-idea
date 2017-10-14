@@ -13,7 +13,7 @@ const Tile3Container = styled.div`
 
   @keyframes tile2-figures {
     0% {
-      transform: translate(0%, 80%);
+      transform: translate(0%, 90%);
     }
     100% {
       transform: translate(0%, 0%);

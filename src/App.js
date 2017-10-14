@@ -10,6 +10,7 @@ class App extends Component {
   render() {
     return (
       <div style={{ margin: "auto", maxWidth: "550px" }}>
+        <h1 style={{ textAlign: "center" }}>Click Tile to Launch Animation</h1>
         <Tile1 />
         <Tile2 />
         <Tile3 />
