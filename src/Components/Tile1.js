@@ -3,12 +3,13 @@ import styled from "styled-components";
 
 const Tile1Container = styled.div`
   box-sizing: border-box;
-  width: 100%;
+  width: 98%;
   height: 30vw;
   position: relative;
   overflow: hidden;
+  margin: 1%;
   background: #66323f;
-  border: 5px solid white;
+  border: 5px solid black;
   animation-play-state: paused;
 
   svg,

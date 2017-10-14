@@ -2,36 +2,27 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Tile2Container = styled.div`
+  box-sizing: border-box;
   width: 98%;
   overflow: hidden;
   position: relative;
   margin: 1%;
   animation-play-state: paused;
-
-  div {
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    background: linear-gradient(to right, #fcfbfb 20%, #000 100%);
-    left: 0;
-    top: 0;
-    animation: 3s tile2-move-cover forwards;
-    animation-play-state: inherit;
-  }
+  background: #fcfbfb;
 
   @keyframes tile2-move-cover {
     0% {
       transform: translate(0%, 0%);
     }
     100% {
-      transform: translate(100%, 0%);
+      transform: translate(90%, 0%);
     }
   }
 
   .scene {
     position: relative;
-    left: -100%;
-    animation: 3s tile2-move-cover forwards;
+    left: -90%;
+    animation: 1s tile2-move-cover forwards;
     animation-play-state: inherit;
 
     .st0 {
@@ -4518,7 +4509,6 @@ export default class Tile2 extends Component {
         style={{ animationPlayState: this.state.playState }}
       >
         {scene}
-        <div />
       </Tile2Container>
     );
   }
