@@ -10,6 +10,7 @@ const Tile3Container = styled.div`
   background: #83bddd;
   border: 5px solid black;
   float: left;
+  cursor: pointer;
 
   @keyframes tile2-figures {
     0% {

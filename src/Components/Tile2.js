@@ -10,6 +10,7 @@ const Tile2Container = styled.div`
   animation-play-state: paused;
   border: 5px solid black;
   background: #fcfbfb;
+  cursor: pointer;
 
   @keyframes tile2-move-cover {
     0% {

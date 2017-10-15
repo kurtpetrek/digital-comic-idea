@@ -10,6 +10,7 @@ const Tile5Container = styled.div`
   position: relative;
   background: #79b06c;
   overflow: hidden;
+  cursor: pointer;
 
   .ground {
     position: absolute;

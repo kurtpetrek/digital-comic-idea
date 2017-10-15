@@ -10,6 +10,7 @@ const Tile4Container = styled.div`
   overflow: hidden;
   border: 5px solid black;
   box-sizing: border-box;
+  cursor: pointer;
 
   .ground {
     position: absolute;

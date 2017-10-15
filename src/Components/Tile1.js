@@ -12,6 +12,7 @@ const Tile1Container = styled.div`
   background: #66323f;
   border: 5px solid black;
   animation-play-state: paused;
+  cursor: pointer;
 
   svg,
   div {
