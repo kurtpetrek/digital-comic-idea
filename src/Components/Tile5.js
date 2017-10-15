@@ -31,10 +31,10 @@ const Tile5Container = styled.div`
 
     @keyframes tile-5-figures {
       0% {
-        transform: translate(0%, -100%);
+        transform: translate(0%, -100%) scale(2);
       }
       100% {
-        transform: translate(0%, 0%);
+        transform: translate(0%, 0%) scale(1);
       }
     }
     .st0 {
