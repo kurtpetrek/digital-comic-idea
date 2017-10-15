@@ -12,6 +12,11 @@ const Tile4Container = styled.div`
   box-sizing: border-box;
   cursor: pointer;
 
+  @media (max-width: 450px) {
+    width: 98%;
+    margin: 1%;
+  }
+
   .ground {
     position: absolute;
     bottom: 0;

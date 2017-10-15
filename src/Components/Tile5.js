@@ -12,6 +12,11 @@ const Tile5Container = styled.div`
   overflow: hidden;
   cursor: pointer;
 
+  @media (max-width: 450px) {
+    width: 98%;
+    margin: 1%;
+  }
+
   .ground {
     position: absolute;
     bottom: 0;

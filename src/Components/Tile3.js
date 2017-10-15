@@ -12,6 +12,11 @@ const Tile3Container = styled.div`
   float: left;
   cursor: pointer;
 
+  @media (max-width: 450px) {
+    width: 98%;
+    margin: 1%;
+  }
+
   @keyframes tile2-figures {
     0% {
       transform: translate(0%, 90%);
