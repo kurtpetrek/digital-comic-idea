@@ -52,7 +52,7 @@ const Tile4Container = styled.div`
 
   &.animated {
     .enemies {
-      animation: tile-4-enemies 0.5s 1s forwards;
+      animation: tile-4-enemies 0.5s 0.5s forwards;
     }
     @keyframes tile-4-enemies {
       0% {
