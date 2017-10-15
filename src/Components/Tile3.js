@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Tile3Container = styled.div`
-  width: 43%;
-  margin: 1%;
+  width: 44%;
+  margin: 1% 0 1% 1%;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
