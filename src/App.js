@@ -5,6 +5,7 @@ import Tile2 from "./Components/Tile2";
 import Tile3 from "./Components/Tile3";
 import Tile4 from "./Components/Tile4";
 import Tile5 from "./Components/Tile5";
+import Button from "./Components/Button";
 
 class App extends Component {
   constructor(props) {
@@ -26,7 +27,9 @@ class App extends Component {
         <Tile3 animation={this.state.animation} />
         <Tile4 animation={this.state.animation} />
         <Tile5 animation={this.state.animation} />
-        <button onClick={this.resetAnimation}>Reset</button>
+        <div style={{ textAlign: "center", padding: "1rem", clear: "both" }}>
+          <Button onClick={this.resetAnimation}>Reset</Button>
+        </div>
       </div>
     );
   }
