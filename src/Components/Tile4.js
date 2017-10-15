@@ -75,20 +75,29 @@ export default class Tile4 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      animationPlaying: ""
+      playState: "",
+      animation: props.animation
     };
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps !== this.state.animation) {
+      this.setState(prevState => {
+        prevState.animation = nextProps;
+        prevState.playState = "";
+        return prevState;
+      });
+    }
+  }
+
   triggerAnimation = () => {
-    this.setState(prevState => (prevState.animationPlaying = "animated"));
+    this.setState(prevState => (prevState.playState = "animated"));
   };
 
   render() {
-    const { animationPlaying } = this.state;
-
     return (
       <Tile4Container
-        className={animationPlaying}
+        className={this.state.playState}
         onClick={this.triggerAnimation}
       >
         {ground}

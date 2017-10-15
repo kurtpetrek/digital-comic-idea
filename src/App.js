@@ -7,15 +7,26 @@ import Tile4 from "./Components/Tile4";
 import Tile5 from "./Components/Tile5";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      animation: 1
+    };
+  }
+  resetAnimation = () => {
+    this.setState(prevState => prevState.animation++);
+  };
+
   render() {
     return (
       <div style={{ margin: "auto", maxWidth: "550px" }}>
         <h1 style={{ textAlign: "center" }}>Click Tile to Launch Animation</h1>
-        <Tile1 />
-        <Tile2 />
-        <Tile3 />
-        <Tile4 />
-        <Tile5 />
+        <Tile1 animation={this.state.animation} />
+        <Tile2 animation={this.state.animation} />
+        <Tile3 animation={this.state.animation} />
+        <Tile4 animation={this.state.animation} />
+        <Tile5 animation={this.state.animation} />
+        <button onClick={this.resetAnimation}>Reset</button>
       </div>
     );
   }

@@ -77,8 +77,18 @@ export default class Tile5 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      playState: ""
+      playState: "",
+      animation: props.animation
     };
+  }
+  componentWillReceiveProps(nextProps) {
+    if (nextProps !== this.state.animation) {
+      this.setState(prevState => {
+        prevState.animation = nextProps;
+        prevState.playState = "";
+        return prevState;
+      });
+    }
   }
 
   launchAnimation = () => {
