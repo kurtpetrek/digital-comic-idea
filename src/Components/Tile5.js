@@ -17,6 +17,10 @@ const Tile5Container = styled.div`
     margin: 1%;
   }
 
+  img {
+    display: block;
+  }
+
   .ground {
     position: absolute;
     bottom: 0;

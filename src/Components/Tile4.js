@@ -17,6 +17,10 @@ const Tile4Container = styled.div`
     margin: 1%;
   }
 
+  img {
+    display: block;
+  }
+
   .ground {
     position: absolute;
     bottom: 0;
@@ -56,10 +60,10 @@ const Tile4Container = styled.div`
     }
     @keyframes tile-4-enemies {
       0% {
-        transform: translate(100%, 0%);
+        transform: translate(100%, 0%) scale(0.5);
       }
       100% {
-        transform: translate(0%, 0%);
+        transform: translate(0%, 0%) scale(1);
       }
     }
   }

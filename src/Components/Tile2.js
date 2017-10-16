@@ -12,6 +12,10 @@ const Tile2Container = styled.div`
   background: #fcfbfb;
   cursor: pointer;
 
+  img {
+    display: block;
+  }
+
   .scene {
     position: relative;
     width: 100%;
@@ -26,10 +30,10 @@ const Tile2Container = styled.div`
 
   @keyframes tile2-move-cover {
     0% {
-      transform: translate(-90%, 0%);
+      transform: translate(-90%, 0%) scale(1.3);
     }
     100% {
-      transform: translate(0%, 0%);
+      transform: translate(0%, 0%) scale(1);
     }
   }
 `;

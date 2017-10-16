@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Tile3Container = styled.div`
-  width: 44%;
+  width: 43.5%;
   margin: 1% 0 1% 1%;
   position: relative;
   overflow: hidden;
@@ -15,6 +15,10 @@ const Tile3Container = styled.div`
   @media (max-width: 450px) {
     width: 98%;
     margin: 1%;
+  }
+
+  img {
+    display: block;
   }
 
   .figures {
